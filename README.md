@@ -1,1 +1,1 @@
-https://riczfe.github.io/Stephannie-Ellen-s-wedding-invitation/
+https://riczfe.github.io/Stephannie-wedding-invitation/
