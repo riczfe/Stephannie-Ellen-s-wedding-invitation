@@ -651,6 +651,33 @@
                 transform: scale(1);
             }
         }
+        /* Remove underline from link and ensure it inherits button styling */
+        .no-underline {
+            text-decoration: none; /* Removes the underline */
+        }
+
+        .no-underline button {
+            all: unset; /* Removes button default styles to inherit */
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #d1c4b2;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Great Vibes', cursive;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .no-underline button:hover {
+            background-color: #b5a491;
+            transform: scale(1.05);
+        }
     </style>
 
     <!-- SNOW EFFECT -->
@@ -760,7 +787,10 @@
             <div class="actions">
                 <div class="actions">
                     <!-- <button id="btn-loi-chuc"><span>&#x1F4AC;</span> Send Your Wishes</button> -->
-                    <button id="confirmation"><span>&#x1F4E8;</span> Confirm Attendance</button>
+                    <!-- <button id="confirmation"><span>&#x1F4E8;</span> Confirm Attendance</button> -->
+                    <a href="https://www.facebook.com/van.maomao.2024" target="_blank" class="no-underline">
+                        <button id="btn-best-wishes"><span>&#x1F4E8;</span> Send your best wishes</button>
+                    </a>
                     <!-- <button id="btn-mung-cuoi"><span>&#x1F4B0;</span> Mừng cưới</button> -->
                 </div>                
                 <!-- RSVP BUTTON -->
@@ -790,13 +820,13 @@
                 </script>
             </div>
             <!-- Popup for "Gửi lời chúc" -->
-            <div class="popup" id="popup-loi-chuc">
+            <!-- <div class="popup" id="popup-loi-chuc">
                 <div class="popup-header">Gửi lời chúc</div>
                 <div class="popup-content">
                     <textarea rows="3" placeholder="Nhập lời chúc của bạn..."></textarea>
                     <button id="send-loi-chuc">Gửi</button>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Popup for "Mừng cưới" -->
             <div class="popup" id="popup-mung-cuoi">
